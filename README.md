@@ -10,12 +10,23 @@ Docker must be installed in order for this container to run, see [Install Docker
 
 ## Installation
 
-Once you clone this repo, navigate into the main directory and create the container by running:
+Clone the docker image:
+```
+docker pull lfplazas10/docker-https:v1
+```
+Run it with:
+```
+docker run -p 443:443 -p 80:80 lfplazas10/docker-https:v1
+```
+
+### Alternative:
+
+Clone this repo, navigate into the main directory and create the image by running:
 ```
 docker build -t docker-https .
 ```
 
-For running the container make sure to map your local ports to the container ports:
+For running the image make sure to map your local ports to the container ports:
 ```
 docker run -p 443:443 -p 80:80 docker-https
 ```
@@ -29,3 +40,4 @@ You should be able to access the page by going to:
 
 [Create A Local HTTPS Proxy Server](https://www.shanestillwell.com/2016/10/03/create-a-local-https-proxy-server/)
 
+[Blacktie themes](https://blacktie.co/)
