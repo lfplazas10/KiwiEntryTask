@@ -2,7 +2,7 @@
 
 Entry task for the Kiwi Cloud Weekend.
 
-Nginx server using SSL runninig on a docker container.
+Nginx server using SSL (with a self-signed certificate) runninig on a docker container.
 
 ## Requirements
 
