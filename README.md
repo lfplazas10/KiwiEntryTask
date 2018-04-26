@@ -20,6 +20,9 @@ For running the container make sure to map your local ports to the container por
 docker run -p 443:443 -p 80:80 docker-https
 ```
 
+You should be able to access the page by going to:
+<http://localhost>
+
 ## Credits
 
 [Serve static files from docker via nginx - A basic example](https://www.linkedin.com/pulse/serve-static-files-from-docker-via-nginx-basic-example-arun-kumar/)
